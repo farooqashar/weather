@@ -10,7 +10,7 @@ const Home = () => {
   });
 
   return (
-    <div className="container">
+    <div>
       <h1>Weather</h1>
       <p className="text-info">
         Enter a city to get its current weather information!
