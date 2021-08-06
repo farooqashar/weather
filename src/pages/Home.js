@@ -48,8 +48,10 @@ const Home = () => {
           <>
             <div className="card">
               <div className="card-body">
-                <h2 className="card-title subttt">{data.getCityByName.name} , {data.getCityByName.country}</h2>
-                <p className="card-text">ID: {data.getCityByName.id}</p>
+                <h2 className="card-title subttt">{data.getCityByName.name}, {data.getCityByName.country}</h2>
+                <p className="card-text"><i className="eachl">ID:</i> {data.getCityByName.id}</p>
+                <p className="card-text"><i className="eachl">Lat:</i> {data.getCityByName.coord.lat} <i className="eachl">Lon:</i> {data.getCityByName.coord.lon}</p>
+
                 <h4 className="card-text">
                   <i className="eachl">Temperature:</i> {data.getCityByName.weather.temperature.actual}
                 </h4>
