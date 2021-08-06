@@ -12,9 +12,11 @@ const Home = () => {
   return (
     <div>
       <h1>Weather</h1>
+      <div className="container">
       <p className="text-info">
         Enter a city to get its current weather information!
       </p>
+      </div>
       <br />
       <br />
 
@@ -28,7 +30,7 @@ const Home = () => {
           placeholder="Enter City Here"
         ></input>
       </div>
-
+    <div className="container">
       <div className="form-group">
         <button onClick={() => getWeatherData()}>Search</button>
       </div>
@@ -41,6 +43,7 @@ const Home = () => {
           <h1>Wind Speed: {data.getCityByName.weather.wind.speed}</h1>
         </>
       )}
+      </div>
     </div>
   );
 };
