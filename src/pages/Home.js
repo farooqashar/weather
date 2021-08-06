@@ -34,7 +34,9 @@ const Home = () => {
       <div className="form-group">
         <button className="btn btn-primary" onClick={() => getWeatherData()}>Search</button>
       </div>
-
+        {loading && <h3 class="text-warning">Loading...</h3>}
+        {error && <h3 class="text-danger">Error: {error.message} </h3>}
+        
       {data && (
         <>
           <h1>City Name: {data.getCityByName.name}</h1>
