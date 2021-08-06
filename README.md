@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+# Weather 
+
+This site built using React and GraphQL displays weather information for a city of the user's choice and is hosted on Vercel at https://weather-wine.vercel.app/.
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
