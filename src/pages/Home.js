@@ -41,27 +41,21 @@ const Home = () => {
             Search
           </button>
         </div>
-        {loading && <h3 class="text-warning">Loading...</h3>}
-        {error && <h3 class="text-danger">Error: {error.message} </h3>}
+        {loading && <h3 className="text-warning">Loading...</h3>}
+        {error && <h3 className="text-danger">Error: {error.message} </h3>}
 
         {data && (
           <>
-            <h1>City Name: {data.getCityByName.name}</h1>
-            <h1>
-              Temperature: {data.getCityByName.weather.temperature.actual}
-            </h1>
-            <h1>
-              Description: {data.getCityByName.weather.summary.description}
-            </h1>
-            <h1>Wind Speed: {data.getCityByName.weather.wind.speed}</h1>
-
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
+            <div className="card">
+              <div className="card-body">
+                <h2 className="card-title">{data.getCityByName.name}</h2>
+                <h3>
+                  Temperature: {data.getCityByName.weather.temperature.actual}
+                </h3>
+                <h1>
+                  Description: {data.getCityByName.weather.summary.description}
+                </h1>
+                <h1>Wind Speed: {data.getCityByName.weather.wind.speed}</h1>
               </div>
             </div>
           </>
