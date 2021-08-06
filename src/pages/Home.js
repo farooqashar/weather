@@ -17,11 +17,11 @@ const Home = () => {
         <br />
         <br />
 
-        <div>
+        <div className="form-group">
         <input onChange={(event) => setCity(event.target.value)} id="city" type="text" placeholder="Enter City Here"></input>
         </div>
 
-        <div>
+        <div className="form-group">
         <button onClick={() => getWeatherData()}>Search</button>
         </div>
         
