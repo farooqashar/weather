@@ -16,6 +16,14 @@ const Home = () => {
         <h1>Find Weather By City</h1>
         <input onChange={(event) => setCity(event.target.value)} id="city" type="text" placeholder="Enter City Here"></input>
         <button onClick={() => getWeatherData()}>Search</button>
+
+        <div>
+         <h1>City Name: {data.getCityByName.name}</h1>
+         <h1>Temperature: {data.getCityByName.name}</h1>
+         <h1>Description: {data.getCityByName.name}</h1>
+         <h1>Wind: {data.getCityByName.name}</h1>
+
+        </div>
         </div>
     )
 };
