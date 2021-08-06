@@ -1,6 +1,6 @@
 # Weather 
 
-This site built using React displays weather information for a city of the user's choice and is hosted on Vercel at https://weather-wine.vercel.app/.
+This site built using React and GraphQL displays weather information for a city of the user's choice and is hosted on Vercel at https://weather-wine.vercel.app/.
 
 ## Getting Started with Create React App
 
