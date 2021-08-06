@@ -56,9 +56,11 @@ const Home = () => {
                   <i className="eachl">Temperature:</i> {data.getCityByName.weather.temperature.actual}
                 </h4>
                 <h4 className="card-text">
-                  <i className="eachl">Forecast:</i> {data.getCityByName.weather.summary.description}
+                  <i className="eachl">Forecast:</i> {data.getCityByName.weather.summary.title} <img alt ="weather icon" src={`https://openweathermap.org/img/w/${data.getCityByName.weather.summary.icon}.png`}/>
                 </h4>
                 <h4 className="card-text"><i className="eachl">Wind Speed:</i> {data.getCityByName.weather.wind.speed}</h4>
+                <h4 className="card-text"><i className="eachl">Humidity:</i> {data.getCityByName.weather.clouds.humidity}</h4>
+
               </div>
             </div>
           </>
