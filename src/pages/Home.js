@@ -32,7 +32,7 @@ const Home = () => {
       </div>
     <div className="container">
       <div className="form-group">
-        <button onClick={() => getWeatherData()}>Search</button>
+        <button className="btn btn-primary" onClick={() => getWeatherData()}>Search</button>
       </div>
 
       {data && (
