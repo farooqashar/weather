@@ -11,11 +11,19 @@ const Home = () => {
     });
 
     return (
-        <>
-        {console.log(data)}
-        <h1>Find Weather By City</h1>
+        <div className="container">
+        <h1>Weather</h1>
+        <p className="text-info">Enter a city to get its current weather information!</p>
+        <br />
+        <br />
+
+        <div>
         <input onChange={(event) => setCity(event.target.value)} id="city" type="text" placeholder="Enter City Here"></input>
+        </div>
+
+        <div>
         <button onClick={() => getWeatherData()}>Search</button>
+        </div>
         
         {data && 
         <>
@@ -24,7 +32,7 @@ const Home = () => {
          <h1>Description: {data.getCityByName.weather.summary.description}</h1>
          <h1>Wind Speed: {data.getCityByName.weather.wind.speed}</h1></>}
 
-        </>
+        </div>
     )
 };
 
